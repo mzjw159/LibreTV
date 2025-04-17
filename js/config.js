@@ -12,7 +12,7 @@ const MAX_HISTORY_ITEMS = 5;
 // 网站信息配置
 const SITE_CONFIG = {
     name: '老麦影视厅',
-    url: 'https://libretv.is-an.org',
+    url: 'https://tv.eve.cc',
     description: '在线视频搜索与观看平台',
     logo: 'https://images.icon-icons.com/38/PNG/512/retrotv_5520.png',
     version: '1.0.0'
