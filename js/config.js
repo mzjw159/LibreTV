@@ -22,73 +22,73 @@ const SITE_CONFIG = {
 const API_SITES = {
     heimuer: {
         api: 'https://json.heimuer.xyz',
-        name: '葛优躺',
+        name: 'https://json.heimuer.xyz',
         detail: 'https://heimuer.tv'
     },
     ffzy: {
         api: 'http://ffzy5.tv',
-        name: '非凡影视',
+        name: 'http://ffzy5.tv',
         detail: 'http://ffzy5.tv'
     },
     tyyszy: {
         api: 'https://tyyszy.com',
-        name: '天涯资源',
+        name: 'https://tyyszy.com',
     },
     ckzy: {
         api: 'https://www.ckzy1.com',
-        name: 'CK资源',
+        name: 'https://www.ckzy1.com',
         adult: true
     },
     zy360: {
         api: 'https://360zy.com',
-        name: '360资源',
+        name: 'https://360zy.com',
     },
     wolong: {
         api: 'https://wolongzyw.com',
-        name: '卧龙资源',
+        name: 'https://wolongzyw.com',
     },
     cjhw: {
         api: 'https://cjhwba.com',
-        name: '新华为',
+        name: 'https://cjhwba.com',
     },
     hwba: {
         api: 'https://cjwba.com',
-        name: '华为吧资源',
+        name: 'https://cjwba.com',
     },
     jisu: {
         api: 'https://jszyapi.com',
-        name: '极速资源',
+        name: 'https://jszyapi.com',
         detail: 'https://jszyapi.com'
     },
     dbzy: {
         api: 'https://dbzy.com',
-        name: '豆瓣资源',
+        name: 'https://dbzy.com',
     },
     bfzy: {
         api: 'https://bfzyapi.com',
-        name: '暴风资源',
+        name: 'https://bfzyapi.com',
     },
     mozhua: {
         api: 'https://mozhuazy.com',
-        name: '魔爪资源',
+        name: 'https://mozhuazy.com',
     },
     mdzy: {
         api: 'https://www.mdzyapi.com',
-        name: '魔都资源',
+        name: 'https://www.mdzyapi.com',
     },
     ruyi: {
         api: 'https://cj.rycjapi.com',
-        name: '如意资源',
+        name: 'https://cj.rycjapi.com',
     },
     
     jkun: {
         api: 'https://jkunzyapi.com',
-        name: 'jkun资源',
+        name: 'https://jkunzyapi.com',
         adult: true
     },
     bwzy: {
         api: 'https://api.bwzym3u8.com',
-        name: '百万资源',
+        name: 'https://api.bwzym3u8.com',
         adult: true
     }
 };
