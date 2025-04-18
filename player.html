@@ -461,20 +461,20 @@
                 chromecast: true,                // 启用Chromecast投屏功能
                 contextmenu: [                   // 自定义右键菜单
                     {
-                        text: '关于 LibreTV',
-                        link: 'https://github.com/bestzwei/LibreTV'
+                        text: '关于躺平观影厅',
+                        link: 'https://tv.eve.cc/'
                     },
                     {
                         text: '问题反馈',
                         click: (player) => {
-                            window.open('https://github.com/bestzwei/LibreTV/issues', '_blank');
+                            window.open('mailto:czz.tel@gmail.com', '_blank');
                         }
                     }
                 ],
                 video: {
                     url: videoUrl,
                     type: 'hls',
-                    pic: 'https://img.picgo.net/2025/04/12/image362e7d38b4af4a74.png', // 设置视频封面图
+                    pic: 'https://img.picgo.net/2025/04/18/vodbgf29db2f286cc2ffc.png', // 设置视频封面图
                     customType: {
                         hls: function(video, player) {
                             // 清理之前的HLS实例
