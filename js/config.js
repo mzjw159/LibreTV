@@ -27,7 +27,7 @@ const API_SITES = {
     },
     ffzy: {
         api: 'http://ffzy5.tv',
-        name: 'http://ffzy5.tv',
+        name: 'ffzy5.tv',
         detail: 'http://ffzy5.tv'
     },
     tyyszy: {
