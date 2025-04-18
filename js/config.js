@@ -22,73 +22,73 @@ const SITE_CONFIG = {
 const API_SITES = {
     heimuer: {
         api: 'https://json.heimuer.xyz',
-        name: 'https://json.heimuer.xyz',
+        name: '来源：https://json.heimuer.xyz',
         detail: 'https://heimuer.tv'
     },
     ffzy: {
         api: 'http://ffzy5.tv',
-        name: 'http://ffzy5.tv',
+        name: '来源：http://ffzy5.tv',
         detail: 'http://ffzy5.tv'
     },
     tyyszy: {
         api: 'https://tyyszy.com',
-        name: 'https://tyyszy.com',
+        name: '来源：https://tyyszy.com',
     },
     ckzy: {
         api: 'https://www.ckzy1.com',
-        name: 'https://www.ckzy1.com',
+        name: '来源：https://www.ckzy1.com',
         adult: true
     },
     zy360: {
         api: 'https://360zy.com',
-        name: 'https://360zy.com',
+        name: '来源：https://360zy.com',
     },
     wolong: {
         api: 'https://wolongzyw.com',
-        name: 'https://wolongzyw.com',
+        name: '来源：https://wolongzyw.com',
     },
     cjhw: {
         api: 'https://cjhwba.com',
-        name: 'https://cjhwba.com',
+        name: '来源：https://cjhwba.com',
     },
     hwba: {
         api: 'https://cjwba.com',
-        name: 'https://cjwba.com',
+        name: '来源：https://cjwba.com',
     },
     jisu: {
         api: 'https://jszyapi.com',
-        name: 'https://jszyapi.com',
+        name: '来源：https://jszyapi.com',
         detail: 'https://jszyapi.com'
     },
     dbzy: {
         api: 'https://dbzy.com',
-        name: 'https://dbzy.com',
+        name: '来源：https://dbzy.com',
     },
     bfzy: {
         api: 'https://bfzyapi.com',
-        name: 'https://bfzyapi.com',
+        name: '来源：https://bfzyapi.com',
     },
     mozhua: {
         api: 'https://mozhuazy.com',
-        name: 'https://mozhuazy.com',
+        name: '来源：https://mozhuazy.com',
     },
     mdzy: {
         api: 'https://www.mdzyapi.com',
-        name: 'https://www.mdzyapi.com',
+        name: '来源：https://www.mdzyapi.com',
     },
     ruyi: {
         api: 'https://cj.rycjapi.com',
-        name: 'https://cj.rycjapi.com',
+        name: '来源：https://cj.rycjapi.com',
     },
     
     jkun: {
         api: 'https://jkunzyapi.com',
-        name: 'https://jkunzyapi.com',
+        name: '来源：https://jkunzyapi.com',
         adult: true
     },
     bwzy: {
         api: 'https://api.bwzym3u8.com',
-        name: 'https://api.bwzym3u8.com',
+        name: '来源：https://api.bwzym3u8.com',
         adult: true
     }
 };
