@@ -11,9 +11,9 @@ const MAX_HISTORY_ITEMS = 5;
 
 // 网站信息配置
 const SITE_CONFIG = {
-    name: '老麦影视厅',
+    name: '躺平放映厅',
     url: 'https://tv.eve.cc',
-    description: '在线视频搜索与观看平台',
+    description: '专治各种不想动的观影强迫症患者',
     logo: 'https://images.icon-icons.com/38/PNG/512/retrotv_5520.png',
     version: '1.0.0'
 };
@@ -22,7 +22,7 @@ const SITE_CONFIG = {
 const API_SITES = {
     heimuer: {
         api: 'https://json.heimuer.xyz',
-        name: '黑木耳',
+        name: '葛优躺',
         detail: 'https://heimuer.tv'
     },
     ffzy: {
