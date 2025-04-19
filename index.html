@@ -86,7 +86,6 @@
                 <div class="flex space-x-2 mb-3">
                     <button onclick="selectAllAPIs(true)" class="px-2 py-1 bg-[#333] hover:bg-[#444] text-white text-xs rounded">全选</button>
                     <button onclick="selectAllAPIs(false)" class="px-2 py-1 bg-[#333] hover:bg-[#444] text-white text-xs rounded">全不选</button>
-                    <button onclick="selectAllAPIs(true, true)" class="px-2 py-1 bg-[#333] hover:bg-[#444] text-white text-xs rounded">全选普通资源</button>
                 </div>
                 
                 <!-- API选择区域 - 使用滚动区域 -->
@@ -102,17 +101,6 @@
                     <span id="siteStatus" class="ml-2"></span>
                 </div>
             </div>
-
-            <!-- 自定义API管理区域 -->
-            <div class="p-3 bg-[#151515] rounded-lg shadow-inner">
-                <div class="flex justify-between items-center mb-2">
-                    <label class="block text-sm font-medium text-gray-400 border-b border-[#333] w-full pb-1">自定义API</label>
-                    <button onclick="showAddCustomApiForm()" class="bg-[#333] hover:bg-[#444] text-white w-6 h-6 rounded-full text-center leading-none text-lg ml-1">+</button>
-                </div>
-                <div id="customApisList" class="max-h-32 overflow-y-auto mb-2">
-                    <!-- 自定义API将显示在这里 -->
-                </div>
-            </div>
             
             <!-- 内容过滤设置区域 -->
             <div class="p-3 bg-[#151515] rounded-lg shadow-inner">
@@ -123,7 +111,7 @@
                     <div class="flex items-center justify-between">
                         <div>
                             <label class="text-sm font-medium text-gray-400">敏感内容过滤</label>
-                            <p class="text-xs text-gray-500 mt-1 filter-description">过滤"伦理片"等敏感内容</p>
+                            <p class="text-xs text-gray-500 mt-1 filter-description">过滤敏感内容</p>
                         </div>
                         <div class="relative inline-block w-12 align-middle select-none">
                             <input type="checkbox" id="yellowFilterToggle" class="opacity-0 absolute w-full h-full cursor-pointer z-10">
@@ -157,7 +145,7 @@
                 <div class="flex justify-center items-center mb-4">
                     <h1 class="text-4xl font-bold gradient-text">躺平观影厅</h1>
                 </div>
-                <p class="text-gray-400 mb-8">您必须以葛优躺姿势入场，沙发凹陷程度与观影时长成正比</p>
+                <p class="text-gray-400 mb-8">你必须以葛优躺姿势入场，沙发凹陷程度与观影时长成正比</p>
             </header>
             
             <!-- 搜索区域：默认居中 -->
