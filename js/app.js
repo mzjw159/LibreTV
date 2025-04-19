@@ -796,7 +796,7 @@ async function showDetails(id, vod_name, sourceCode) {
         
         // 显示来源信息
         const sourceName = data.videoInfo && data.videoInfo.source_name ? 
-            ` <span class="text-sm font-normal text-gray-400">(${data.videoInfo.source_name})</span>` : '';
+            ` <span class="text-sm font-normal text-gray-400">（来源：${data.videoInfo.source_name}）</span>` : '';
         
         // 不对标题进行截断处理，允许完整显示
         modalTitle.innerHTML = `<span class="break-words">${vod_name || '未知视频'}</span>${sourceName}`;
