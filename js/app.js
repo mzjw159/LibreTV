@@ -737,8 +737,8 @@ async function search() {
                                 </p>
                             </div>
                             
-                            <div class="flex justify-between items-center mt-2 pt-2 border-t border-gray-800">来源：
-                                ${sourceInfo ? `<div>${sourceInfo}</div>` : '<div></div>'}
+                            <div class="flex justify-between items-center mt-2 pt-2 border-t border-gray-800">
+                                ${sourceInfo ? `<div>来源：${sourceInfo}</div>` : '<div></div>'}
                             </div>
                         </div>
                     </div>
