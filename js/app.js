@@ -1,5 +1,5 @@
 // 全局变量
-let selectedAPIs = JSON.parse(localStorage.getItem('selectedAPIs') || '["heimuer"]'); // 默认选中黑木耳
+let selectedAPIs = JSON.parse(localStorage.getItem('selectedAPIs') || '["ffzy1.tv"]'); // 默认选中黑木耳
 let customAPIs = JSON.parse(localStorage.getItem('customAPIs') || '[]'); // 存储自定义API列表
 
 // 添加当前播放的集数索引
@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // 设置默认API选择（如果是第一次加载）
     if (!localStorage.getItem('hasInitializedDefaults')) {
-        // 仅选择黑木耳源
-        selectedAPIs = ["heimuer"];
+        // 仅选择非凡资源
+        selectedAPIs = ["ffzy1.tv"];
         localStorage.setItem('selectedAPIs', JSON.stringify(selectedAPIs));
         
         // 默认选中过滤开关
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('hasInitializedDefaults', 'true');
     }
     
-    // 设置黄色内容过滤开关初始状态
+    // 设置敏感内容过滤开关初始状态
     const yellowFilterToggle = document.getElementById('yellowFilterToggle');
     if (yellowFilterToggle) {
         yellowFilterToggle.checked = localStorage.getItem('yellowFilterEnabled') === 'true';
@@ -99,17 +99,17 @@ function initAPICheckboxes() {
         // 添加成人API组标题
         const adultTitle = document.createElement('div');
         adultTitle.className = 'api-group-title adult';
-        adultTitle.innerHTML = `黄色资源采集站 <span class="adult-warning">
+        adultTitle.innerHTML = `敏感资源 <span class="adult-warning">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
             </svg>
         </span>`;
         container.appendChild(adultTitle);
         
-        // 创建成人API源的复选框
+        // 创建敏感API源的复选框
         Object.keys(API_SITES).forEach(apiKey => {
             const api = API_SITES[apiKey];
-            if (!api.adult) return; // 仅添加成人内容API
+            if (!api.adult) return; // 仅添加敏感内容API
             
             const checked = selectedAPIs.includes(apiKey);
             
@@ -132,16 +132,16 @@ function initAPICheckboxes() {
         });
     }
     
-    // 初始检查成人内容状态
+    // 初始检查敏感内容状态
     checkAdultAPIsSelected();
 }
 
-// 检查是否有成人API被选中
+// 检查是否有敏感API被选中
 function checkAdultAPIsSelected() {
     // 查找所有内置成人API复选框
     const adultBuiltinCheckboxes = document.querySelectorAll('#apiCheckboxes .api-adult:checked');
     
-    // 查找所有自定义成人API复选框
+    // 查找所有自定义敏感API复选框
     const customApiCheckboxes = document.querySelectorAll('#customApisList .api-adult:checked');
     
     const hasAdultSelected = adultBuiltinCheckboxes.length > 0 || customApiCheckboxes.length > 0;
@@ -150,7 +150,7 @@ function checkAdultAPIsSelected() {
     const yellowFilterContainer = yellowFilterToggle.closest('div').parentNode;
     const filterDescription = yellowFilterContainer.querySelector('p.filter-description');
     
-    // 如果选择了成人API，禁用黄色内容过滤器
+    // 如果选择了敏感API，禁用敏感内容过滤器
     if (hasAdultSelected) {
         yellowFilterToggle.checked = false;
         yellowFilterToggle.disabled = true;
@@ -161,7 +161,7 @@ function checkAdultAPIsSelected() {
         
         // 修改描述文字
         if (filterDescription) {
-            filterDescription.innerHTML = '<strong class="text-pink-300">选中黄色资源站时无法启用此过滤</strong>';
+            filterDescription.innerHTML = '<strong class="text-pink-300">选中敏感资源站时无法启用此过滤</strong>';
         }
         
         // 移除提示信息（如果存在）
@@ -176,7 +176,7 @@ function checkAdultAPIsSelected() {
         
         // 恢复原来的描述文字
         if (filterDescription) {
-            filterDescription.innerHTML = '过滤"伦理片"等黄色内容';
+            filterDescription.innerHTML = '过滤"伦理片"等敏感内容';
         }
         
         // 移除提示信息
@@ -202,7 +202,7 @@ function renderCustomAPIsList() {
         const apiItem = document.createElement('div');
         apiItem.className = 'flex items-center justify-between p-1 mb-1 bg-[#222] rounded';
         
-        // 根据是否是成人内容设置不同的样式
+        // 根据是否是敏感内容设置不同的样式
         const textColorClass = api.isAdult ? 'text-pink-400' : 'text-white';
         
         // 将(18+)标记移到最前面
@@ -737,17 +737,8 @@ async function search() {
                                 </p>
                             </div>
                             
-                            <div class="flex justify-between items-center mt-2 pt-2 border-t border-gray-800">
+                            <div class="flex justify-between items-center mt-2 pt-2 border-t border-gray-800">来源：
                                 ${sourceInfo ? `<div>${sourceInfo}</div>` : '<div></div>'}
-                                <div>
-                                    <span class="text-xs text-gray-500 flex items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                        点击播放1
-                                    </span>
-                                </div>
                             </div>
                         </div>
                     </div>
