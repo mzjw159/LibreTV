@@ -21,8 +21,8 @@ const SITE_CONFIG = {
 // API站点配置
 const API_SITES = {
     heimuer: {
-        api: 'https://json02.heimuer.xyz/',
-        name: 'json02.heimuer.xyz',
+        api: 'https://json.heimuer.xyz/',
+        name: 'json.heimuer.xyz',
         detail: 'https://heimuer.tv'
     },
     ffzy: {
