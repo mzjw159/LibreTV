@@ -21,52 +21,31 @@ const SITE_CONFIG = {
 // API站点配置
 const API_SITES = {
     heimuer: {
-        api: 'https://json.heimuer.xyz',
-        name: 'json.heimuer.xyz',
+        api: 'https://json02.heimuer.xyz/',
+        name: 'json02.heimuer.xyz',
         detail: 'https://heimuer.tv'
     },
     ffzy: {
-        api: 'http://ffzy5.tv',
-        name: 'ffzy5.tv',
-        detail: 'http://ffzy5.tv'
+        api: 'http://ffzy1.tv',
+        name: 'ffzy1.tv',
+        detail: 'http://ffzy1.tv'
     },
     tyyszy: {
-        api: 'https://tyyszy.com',
-        name: 'tyyszy.com',
-    },
-    ckzy: {
-        api: 'https://www.ckzy1.com',
-        name: 'www.ckzy1.com',
-        adult: true
+        api: 'https://tyyszyapi.com/',
+        name: 'tyyszyapi.com',
     },
     zy360: {
-        api: 'https://360zy.com',
-        name: '360zy.com',
+        api: 'https://360zy1.com',
+        name: '360zy1.com',
     },
     wolong: {
-        api: 'https://wolongzyw.com',
-        name: 'wolongzyw.com',
-    },
-    cjhw: {
-        api: 'https://cjhwba.com',
-        name: 'cjhwba.com',
-    },
-    hwba: {
-        api: 'https://cjwba.com',
-        name: 'cjwba.com',
+        api: 'https://wolongzy.cc',
+        name: 'wolongzy.cc',
     },
     jisu: {
-        api: 'https://jszyapi.com',
-        name: 'jszyapi.com',
-        detail: 'https://jszyapi.com'
-    },
-    dbzy: {
-        api: 'https://dbzy.com',
-        name: 'dbzy.com',
-    },
-    bfzy: {
-        api: 'https://bfzyapi.com',
-        name: 'bfzyapi.com',
+        api: 'https://www.jisuziyuan.com/',
+        name: 'www.jisuziyuan.com/',
+        detail: 'https://jisuziyuan.com'
     },
     mozhua: {
         api: 'https://mozhuazy.com',
@@ -79,17 +58,6 @@ const API_SITES = {
     ruyi: {
         api: 'https://cj.rycjapi.com',
         name: 'cj.rycjapi.com',
-    },
-    
-    jkun: {
-        api: 'https://jkunzyapi.com',
-        name: 'jkunzyapi.com',
-        adult: true
-    },
-    bwzy: {
-        api: 'https://api.bwzym3u8.com',
-        name: 'api.bwzym3u8.com',
-        adult: true
     }
 };
 
